@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>五子棋</title>
+	<style>
+	    .canvas-wrapper{
+	    	position: relative;
+	    	width: 640px;
+	    	height: 640px;
+	    }
+		#canvas,
+		#canvaschess{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+    <script src="chess.js"></script>
+    <div class="canvas-wrapper">
+		<canvas id="canvas" width="640" height="640" onclick="playChess(event)"></canvas>
+		<canvas id="canvaschess" width="640" height="640" onclick="playChess(event)"></canvas>
+	</div>
+	<button id="back">后退一步</button>
+	<button id="replay">重玩</button>
+</body>
+</html>
